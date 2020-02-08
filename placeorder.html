@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/Contact.css">
+    <link rel="stylesheet" href="css/PlaceOrder.css">
+    <script src="./js/giftcard.js"></script>
+    
+</head>
+<body>
+
+<!-- <div class="container-fluid"> -->
+<!-- <div class="jumbotron"> -->
+  <!-- <h1>My First Bootstrap Page</h1> -->
+  <!-- <p>This is some text.</p> -->
+<!-- </div> -->
+<!-- </div> -->
+<img src="logo.png"  class="img-rounded" height="100px" width="150px" />
+<h1>GIFTCARD</h1>
+<div class="sidenav">
+  <a href="index.html">Home</a>
+  <a href="placeorder.html">Place Order</a>
+  <a href="vieworder.html">View Order</a>
+  <a  href="ContactUs.html">Contact Us</a>
+</div>
+<div style="margin-left:16%">
+    <div class="container-fluid">
+        <nav class="navbar  navbar-expand-lg navbar-inverse navbar-fixed">
+
+
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand">GIFTCARD</a>
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="placeorder.html">Place Order</a></li>
+                        <li><a href="vieworder.html">View Order</a></li>
+                        <li><a href="ContactUs.html"><span class="glyphicon glyphicon-user"></span> ContactUs</a></li>
+
+
+                    </ul>
+                    <!-- <ul class="nav navbar-nav navbar-right"> -->
+                    <!-- <li><a href="d:/website/ContactUs.html"><span class="glyphicon glyphicon-user"></span> ContactUs</a></li> -->
+                    <!-- </ul> -->
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+
+    <form action="vieworder.html" onSubmit="return addOrderFormSubmit()">
+        <center>
+            <label>Gift Card Amount</label>
+            <input class="a" type="number" id="amt1" placeholder="INR" minlength="1" maxlength="99" required />
+            <input class="a" type="number" id="amt2" placeholder="Paisa" min="0" maxlength="100" /><br /><br />
+
+            <label>Receipent Name</label>
+            <input class="a" type="text" id="r1" placeholder="First Name" />
+            <input class="a" type="text" id="r2" placeholder="Last Name" />
+
+            <fieldset class="a" style="width:500px;">
+                <legend>Shipping Address</legend>
+                <br />
+                <textarea id="sa1" required></textarea><br />
+                <lable class="l1">Street Address</lable><br /><br />
+                <label class="l1">
+                    <input class="a" type="text" id="city" required />
+                    <span>City</span>
+                </label>
+                <label class="l1">
+                    <input class="a" type="text" id="state" required />
+                    <span>State</span>
+                </label><br /><br /><br />
+                <label class="l1">
+                    <select id="country" class="a">
+                        <option value="">Select Country</option>
+                        <option value="Afganistan">Afghanistan</option>
+                        <option value="UK">UK</option>
+                        <option value="Canada">Canada</option>
+                        <option value="American Samoa">American Samoa</option>
+                        <option value="India">India</option>
+                        <option value="Iraq">Iraq</option>
+                        <option value="USA">USA</option>
+                    </select>
+                    <span>Country</span>
+                </label>
+                <label for="pincode" class="l1">
+                    <input class="a" type="number" id="pincode" required />
+                    <span>Pincode</span>
+                </label>
+            </fieldset>
+            <br />
+
+            <label>Buyer's Name</label>
+            <input type="text" class="a" id="bn1" placeholder="First Name" required />
+            <input type="text" class="a" id="bn2" placeholder="Last Name" required /><br /><br />
+            <label>Phone Number</label>
+            <input style="width:35px" class="a" id="phone" value="+91" readonly="readonly" />
+            <input type="number" style="width:35px" class="a" id="ph1" onkeypress="myfun1()" required />
+            <input type="number" style="width:35px" class="a" id="ph2" onkeypress="myfun2()" required />
+            <input type="number" style="width:35px" class="a" id="ph3" onkeypress="myfun3()" required />
+            <input type="number" style="width:35px" class="a" id="ph4" onkeypress="myfun4()" required />
+            <input type="number" style="width:35px" class="a" id="ph5" onkeypress="myfun5()" required />
+            <input type="number" style="width:35px" class="a" id="ph6" onkeypress="myfun6()" required />
+            <input type="number" style="width:35px" class="a" id="ph7" onkeypress="myfun7()" required />
+            <input type="number" style="width:35px" class="a" id="ph8" onkeypress="myfun8()" required />
+            <input type="number" style="width:35px" class="a" id="ph9" onkeypress="myfun9()" required />
+            <input type="number" style="width:35px" class="a" id="ph10" onkeypress="myfun10()" required />
+            <br /><br />
+            <label>Email:</label>
+            <input type="email" class="a" id="email" required /><br />
+            <button class="btn btn-primary">Place Order</button>
+        </center>
+    </form>
+</body>
+</html>

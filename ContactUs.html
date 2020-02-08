@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/Contact.css">
+<script>
+
+function submit() 
+{
+  if(t1.value!=" " && t2.value!=" ")
+  {
+  alert("submitted successfully");
+  }
+  else {
+  alert("enter ");
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- <div class="container-fluid"> -->
+<!-- <div class="jumbotron"> -->
+  <!-- <h1>My First Bootstrap Page</h1> -->
+  <!-- <p>This is some text.</p> -->
+<!-- </div> -->
+<!-- </div> -->
+<img src="images/logo.png"  class="img-rounded" height="100px" width="150px" />
+<h1>GIFTCARD</h1>
+<div class="sidenav">
+  <a href="index.html">Home</a>
+  <a href="placeorder.html">Place Order</a>
+  <a href="vieworder.html">View Order</a>
+  <a  href="ContactUs.html">Contact Us</a>
+</div>
+<div style="margin-left:16%">
+<div class="container-fluid">
+<nav class="navbar  navbar-expand-lg navbar-inverse navbar-fixed">
+
+
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand">GIFTCARD</a>
+     
+        <ul class="nav navbar-nav">
+            <li><a href="placeorder.html">Place Order</a></li>
+            <li><a href="vieworder.html">View Order</a></li>
+           
+
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right"> -->
+            <!-- <li><a href="d:/website/ContactUs.html"><span class="glyphicon glyphicon-user"></span> ContactUs</a></li> -->
+           
+        <!-- </ul> -->
+    </div>
+  </div>
+</nav>
+
+</div>
+
+<div id="contact">
+<form action="#" onsubmit="submit()" >
+<h2>ContatUs<p>
+   
+			<marquee>We Are Here to help u!!</marquee>
+   </p></h2>
+    <div>
+   <label><span class="glyphicon glyphicon-user"></span> Name</label><input type="text" name="t1"  required><br>
+   <label><span class="glyphicon glyphicon-envelope"></span>Email</label><input type="email" name="t2" required>
+  
+   <p>
+   <label>Comments</label><br>
+   <textarea type="textarea" name="txtarea" id="txtarea" required></textarea>
+   </p>
+   </div>
+   <div >
+   <b>&copy; All Rights Reserved</b>
+   </div>
+
+<h4 id="txt"></h4>
+<button  class="btn btn-warning btn-md" >Post</button>
+</form>
+</div>
+</body>
+</html>
